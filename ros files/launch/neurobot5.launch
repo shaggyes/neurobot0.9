@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="neurobot_data" pkg="neurobot5" type="nb_data_i2c.py" output="screen" respawn="false" />
+
+  <node name="neurobot_data" pkg="neurobot5" type="nb_imu_i2c.py" output="screen" respawn="false" />
+
+  <node name="neurobot_core" pkg="neurobot5" type="nb_core.py" output="screen" respawn="false" />
+
+  <node name="neurobot_assist" pkg="neurobot5" type="nb_assist.py" output="screen" respawn="false" />
+
+</launch>
